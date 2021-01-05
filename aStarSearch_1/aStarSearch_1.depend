@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1608491115 source:d:\vstempsamples\c++projects\algo-ds-c-\astarsearch_1\main.cpp
+	<fstream>
+	<iostream>
+	<sstream>
+	<string>
+	<vector>
+
+1608550158 source:d:\vstempsamples\c++projects\algo-ds-c-\astarsearch_1\test.cpp
+	<iostream>
+

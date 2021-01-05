@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1609500408 source:d:\vstempsamples\c++projects\astarsearch_2\main.cpp
+	<fstream>
+	<iostream>
+	<sstream>
+	<string>
+	<vector>
+

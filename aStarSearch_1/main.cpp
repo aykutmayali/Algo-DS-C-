@@ -60,16 +60,41 @@ void PrintBoard(const vector<vector<State>> board) {  //iki boyutlu diziyi ekran
   }
 }
 
-// TODO: Write the Search function stub here.
+/**
+ * Implementation of A* search algorithm
+ */
+vector<vector<State>> Search(vector<vector<State>> grid, int init[2], int goal[2]) {
 
-int main()
-{
-  // TODO: Declare "init" and "goal" arrays with values {0, 0} and {4, 5} respectively.
-  vector<int> init= {0,0};
-  vector<int> goal= {4,5};
-  auto board = ReadBoardFile("1.board");
-  // TODO: Call Search with "board", "init", and "goal". Store the results in the variable "solution".
-  // TODO: Change the following line to pass "solution" to PrintBoard.
-  PrintBoard(board);
-    return 0;
+
+  cout << "No path found!" << "\n";
+  return std::vector<vector<State>> {};
+}
+
+// TODO: Write the Heuristic function here.
+int Heuristic(int a1[2], int a2[2]){
+    int t1,t2,i;
+    int length = 0;
+    length = sizeof(a1) ;
+    cout << "length "<< length<< "\n";
+    int response[length];
+
+    for(i=0; i<length ; i++){
+        response[i] = abs(a1[i]-a2[i]);
+        cout << response[i]<<" "<<i << "\n";
+    }
+    //cout << &response;
+//    return response;
+}
+
+#include "test.cpp" // For testing solution
+int main() {
+  int init[2]{0, 0};
+  int goal[2]{4, 5};
+  auto board = ReadBoardFile(f);
+  auto solution = Search(board, init, goal);
+  PrintBoard(solution);
+  // Tests
+  //TestHeuristic();
+  Heuristic(init,goal);
+
 }
