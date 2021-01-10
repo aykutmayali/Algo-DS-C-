@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1610279562 source:d:\vstempsamples\c++projects\codility_2\main.cpp
+	<iostream>
+	<cmath>
+
