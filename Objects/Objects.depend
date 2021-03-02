@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1614677170 source:d:\vstempsamples\c++projects\algo-ds-c-\objects\main.cpp
+	<iostream>
+	<string>
+	<vector>
+
